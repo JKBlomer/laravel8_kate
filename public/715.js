@@ -1,0 +1,1 @@
+(self.webpackChunklaravel_kate=self.webpackChunklaravel_kate||[]).push([[715],{9715:function(e,t,l){"use strict";var a=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(t,"__esModule",{value:!0});var u=a(l(7294));t.default=function(){return u.default.createElement("p",null,"Hello, Kate!")}}}]);
