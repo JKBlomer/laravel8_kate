@@ -23,7 +23,7 @@ class BookmarkController extends Controller
         ]);
     }
 
-
+ 
     public function add(){
         return Inertia::render('Bookmark/Add/index');
     }
