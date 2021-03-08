@@ -24,4 +24,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::group(['middleware'=>['auth']], function(){
     Route::get('/bookmarks',[BookmarkController::class,'index'])->name('bookmark.index');
+    Route::get('/bookmark/add',[BookmarkController::class,'add'])->name('bookmark.add');
+    Route::get('/bookmark/view/{bookmark}',[BookmarkController::class,'view'])->name('bookmark.view');
+    Route::post('/bookmark/make-active',[BookmarkController::class,'makeActive'])->name('bookmark.active');
+
+    Route::post('/bookmark/preview',[BookmarkController::class,'getPreviewData'])->name('bookmark.preview');
 });
