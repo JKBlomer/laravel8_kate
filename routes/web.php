@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BookmarkController;
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 /*
@@ -14,9 +15,7 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[WelcomeController::class,'index'])->name('index');
 
 Auth::routes();
 

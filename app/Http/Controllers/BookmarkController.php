@@ -40,7 +40,7 @@ class BookmarkController extends Controller
         //     'link'=>$postData['link'],
         // ]);
 
-        logger($data);
+        //logger($data);
 
         $bookmark = Bookmark::create([
             
